@@ -13,4 +13,4 @@ awk -v ip="$lan_ip" '/0 => '\''localhost'\''/{print; print "    1 => '\''"ip"'\'
 COMPOSE_FILE="/var/lib/casaos/apps/big-bear-nextcloud-smb/docker-compose.yml"
 
 # Apply changes using casaos-cli
-casaos-cli app-management apply "big-bear-nextcloud" --file="$COMPOSE_FILE"
+casaos-cli app-management apply "big-bear-nextcloud-smb" --file="$COMPOSE_FILE"
